@@ -196,8 +196,11 @@ body {
 }
 .main-container .intro-section .text-intro button {
   align-self: center;
+  margin: 10px 0px 0px 0px;
   width: 150px;
   height: 40px;
+  border-radius: 10px;
+  background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
 }
 .main-container .about-section {
   background-color: #FFFFFF;
@@ -239,7 +242,7 @@ body {
   margin: 20px 20px 20px 20px;
 }
 .main-container .portfolio-section p {
-  margin: 10px 10px 0px 10px;
+  margin: 10px 10px 0px 20px;
 }
 .main-container .portfolio-section table {
   margin: 20px 10px 10px 10px;
@@ -254,6 +257,7 @@ body {
 .main-container .portfolio-section table tr td {
   padding: 10px;
   text-align: center;
+  vertical-align: middle;
 }
 .main-container .portfolio-section table tr td a {
   text-decoration: none;
@@ -266,4 +270,56 @@ body {
   color: white;
   background-color: #555;
   border-radius: 15px;
+}
+.main-container .portfolio-section table tr:nth-child(even) {
+  color: white;
+  background-color: #777;
+}
+.main-container .portfolio-section table tr:first-child {
+  background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+.main-container .contact {
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  line-height: 1.15;
+  font-size: 1.1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0px 20px 20px 20px;
+}
+.main-container .contact p {
+  margin: 10px 10px 10px 20px;
+  flex: 5;
+}
+.main-container .contact ul {
+  margin: 10px 20px 10px 10px;
+  display: flex;
+  flex-flow: column wrap;
+  flex: 3;
+}
+.main-container .contact ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px 0px 5px 0px;
+  align-self: center;
+}
+.main-container .contact ul li a:hover {
+  color: white;
+  background-color: #555;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+.main-container .contact ul li a:first-child {
+  margin-left: 0;
+}
+.main-container .contact ul li a:last-child {
+  margin-right: 0;
+}
+.main-container footer {
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  line-height: 1.15;
+  font-size: 1rem;
+  margin: 0px 20px 20px 20px;
+  text-align: center;
 }
