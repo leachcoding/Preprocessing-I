@@ -2,10 +2,11 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-
   <title>My Resume</title>
 
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -14,6 +15,128 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+
+  <div class="main-container">
+
+    <header class="navigation" id="top">
+      <nav>
+        <a href="#top" class="home-navigation">Home</a>
+        <a href="#intro" class="intro-navigation">Intro</a>
+        <a href="#about" class="about-navigation">About</a>
+        <a href="#portfolio" class="portfolio-navigation">Portfolio</a>
+        <a href="#contact" class="contact-navigation">Contact</a>
+      </nav>
+    </header>
+
+    <section class="intro-section" id="intro">
+      <div class="img-intro">
+        <img src="images/natural-bridge.jpg" alt="Natural Bridge" />
+      </div>
+      <div class="text-intro">
+        <h2 class="intro-text">Hi! I'm <strong>Jay</strong>, a Software Engineer and Full Stack Web Developer.</h2>
+        <p class="intro-text">I'm obsessed with technology, passionate about clean, semantic code, out of the box thinking, and accessibility for all.</p>
+        <button class="intro-text" href="#about">Learn More!</button>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <section class="left-about-section">
+        <p>Hi, I love to hike, lift weights, read, and explore new cities. I currently am enrolled at Lambda School, in the Full Stack Web Development Track, which is an in-depth program that teaches you the foundations of web development and computer science. I am skilled in HTML, CSS, Flexbox, CSS Grid, Bootstrap, and Javascript. I am improving on my jQuery, Git, the DOM, and Python. I am currently starting to learn LESS, Node, Yarn, React, Redux, NodeJs, Web API's, ExpressJs, OOP, Algorithms and Data Structures, C#, Hash Tables, Computer Architecture, and Web Servers. If there is any new technology out there, I atleast want to give it a cursory look, as I'm a glutton for learning and improving myself, whether its the body or the mind.</p>
+      </section>
+      <section class="right-about-section">
+        <p>Skills and Accomplishments:</p>
+        <ol><br/>
+          <li>Recently killed over 300 in a battle on Mount and Blade: Warband</li>
+          <li>Flexbox is my jam</li>
+          <li>Hit a 405lb squat once</li>
+          <li>Extremely organized coder</li>
+          <li>Threw a football further than Uncle Rico</li>
+        </ol>
+      </section>
+    </section>
+
+    <section class="portfolio-section" id="portfolio">
+      <p>As a developer always looking to learn, try new things, and push the boundaries on what I think capable, I strive to be the best I can be and have my work reflect the passion I feel for software and web development. Here are some projects that showcase that passion!</p>
+      <table>
+        <tr>
+          <th>Project Name</th>
+          <th>Project Description</th>
+          <th>Technology Used</th>
+        </tr>
+        <tr>
+          <td><a href="https://codepen.io/leachcoding/pen/QRxooy">User Interface I: HTML Markup</a></td>
+          <td>An introductory project designed to practice Semantic HTML.</td>
+          <td>HTML</td>
+        </tr>
+        <tr>
+          <td><a href="https://codepen.io/leachcoding/pen/VOdNeg">User Interface I: Project 2 - Sweet Eats Bakery</a></td>
+          <td>An introductory project designed to update the CSS of the previous project, User Interface I: HTML Markup</td>
+          <td>HTML, CSS</td>
+        </tr>
+        <tr>
+          <td><a href="https://codepen.io/leachcoding/pen/jovPvp">User Interface I:  Project 2 - Sweet Eats Bakery Stretch Challenge</a></td>
+          <td>A stretch challenge, taking User Interface I: Project 2 - Sweet Eats Bakery, and making a cookies page for it.</td>
+          <td>HTML, CSS</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/leachcoding/User-Interface">User Interface Project: Great Idea Web Page</a></td>
+          <td>Built a single page website, using just the box model and display:inline-block. Flexbox or CSS Grid were not allowed to be used.</td>
+          <td>HTML, CSS</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/leachcoding/UI-III-Flexbox">User Interface Project II: Great Idea Web Page With Flexbox</a></td>
+          <td>Refactored User Interface Project: Great Idea Web Page using Flexbox, as well as creating a services page for it.</td>
+          <td>HTML, CSS, Flexbox</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/leachcoding/Sprint-Challenge--User-Interface">Sprint Challenge: User Interface and Git - Multi-Page Website</a></td>
+          <td>Created a multi page website that originally had missing HTML and CSS specificity problems that needed to be solved.</td>
+          <td>HTML, CSS, Flexbox</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/leachcoding/responsive-web-design-I">Responsive Web Design I: Adaptive Website</a></td>
+          <td>Refactored the "Great Idea" webpage to make it responsive to a tablet and mobile viewport. Also studied the concepts of Mobile First vs Desktop First.</td>
+          <td>HTML, CSS, Flexbox, Media Queries</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/leachcoding/portfolio-website">Portfolio Website</a></td>
+          <td>Designed a portfolio website mockup using a free template.</td>
+          <td>HTML, CSS</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/leachcoding/responsive-cashier-system">Responsive Cashier System</a></td>
+          <td>Redesigned a POS system to be inclusive of iPads(1024x768 screen-size) and iPhone 5's (320x568 screen-size).</td>
+          <td>HTML, CSS, LESS</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/leachcoding/MyBookList">MyBookList</a></td>
+          <td>An application designed to track my owned books given Title, Author, and ISBN.</td>
+          <td>HTML, Bootstrap, Javascript</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/leachcoding/Preprocessing-I">Preprocessing I: Digital Resume</a></td>
+          <td>You're looking at it! This digital resume is a showcase of my projects, skills, and all relevant information to get me a job doing what I love.</td>
+          <td>HTML, CSS, LESS</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="contact">
+      <p>If you like the work you see, would like to collaborate on a personal project, are interested in employing me, or just want to say hi, shoot me a message.</p>
+      <ul>
+        <li><a href="https://twitter.com/leachcoding">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/jay-leach-328b7a188/">LinkedIn</a></li>
+        <li><a href="https://github.com/leachcoding">Github</a></li>
+        <li><a href="https://www.freecodecamp.org/leach_coding">FCC</a></li>
+        <li>leachcoding@gmail.com</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2019 Jay Leach</p>
+    </footer>
+
+  </div>
+
 </body>
 </html>

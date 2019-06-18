@@ -1,1 +1,269 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+.main-container {
+  font-size: 62.5%;
+  margin: 0 auto;
+  background-color: #F5F5F5;
+}
+.main-container header nav {
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.55rem;
+  margin: 0px 20px 20px 20px;
+}
+.main-container header nav a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px 0px 5px 0px;
+  align-self: center;
+}
+.main-container header nav a:hover {
+  color: white;
+  background-color: #555;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+.main-container header nav a:first-child {
+  margin-left: 0;
+}
+.main-container header nav a:last-child {
+  margin-right: 0;
+}
+.main-container .intro-section {
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 1.3rem;
+  margin: 0px 20px 20px 20px;
+}
+.main-container .intro-section .img-intro img {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 10px 0px 10px 10px;
+  width: 600px;
+  max-width: 100%;
+  max-height: 450px;
+  border-radius: 50px;
+}
+.main-container .intro-section .text-intro {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: 10px 10px 0px 10px;
+  line-height: 1.15;
+}
+.main-container .intro-section .text-intro .intro-text {
+  text-align: center;
+}
+.main-container .intro-section .text-intro button {
+  align-self: center;
+  width: 150px;
+  height: 40px;
+}
+.main-container .about-section {
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  font-size: 1.1rem;
+  margin: 10px 20px 0px 20px;
+}
+.main-container .about-section .left-about-section {
+  flex: 4;
+  padding: 10px 10px 0px 10px;
+  margin: 10px 10px 20px 10px;
+  line-height: 1.15;
+}
+.main-container .about-section .right-about-section {
+  flex: 3;
+  margin: 0px 10px 20px 10px;
+  line-height: 1.15;
+}
+.main-container .about-section .right-about-section ol {
+  list-style-type: square;
+}
+.main-container .about-section .right-about-section ol li {
+  border-top: 1px solid darkgray;
+  padding: 5px 0px 5px 0px;
+}
+.main-container .about-section .right-about-section ol li:last-child {
+  border-bottom: 1px solid darkgray;
+}
+.main-container .portfolio-section {
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  display: flex;
+  flex-flow: column nowrap;
+  line-height: 1.15;
+  font-size: 1.1rem;
+  margin: 20px 20px 20px 20px;
+}
+.main-container .portfolio-section p {
+  margin: 10px 10px 0px 10px;
+}
+.main-container .portfolio-section table {
+  margin: 20px 10px 10px 10px;
+}
+.main-container .portfolio-section table tr {
+  border: 1px solid darkgray;
+}
+.main-container .portfolio-section table tr th {
+  padding: 10px;
+  text-align: center;
+}
+.main-container .portfolio-section table tr td {
+  padding: 10px;
+  text-align: center;
+}
+.main-container .portfolio-section table tr td a {
+  text-decoration: none;
+  color: darkgray;
+}
+.main-container .portfolio-section table tr td a:hover {
+  color: white;
+}
+.main-container .portfolio-section table tr td:first-child:hover {
+  color: white;
+  background-color: #555;
+  border-radius: 15px;
+}
