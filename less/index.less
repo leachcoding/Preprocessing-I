@@ -1,5 +1,5 @@
 // Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -13,8 +13,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -25,7 +25,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -55,5 +55,246 @@ table {
 
 html, body {
     height: 100%;
+		font-family: "Roboto", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 }
 
+// VARIABLES
+
+@background-color: #FFFFFF;
+@phone-down: ~'(max-width: 500px)';
+
+// MIXINS
+
+.mixin-flex() {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.mixin-flex-column() {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+// LESS CSS CODE
+
+.main-container {
+	font-size: 62.5%;
+	margin: 0 auto;
+	background-color: #F5F5F5;
+
+	header {
+		nav {
+			background-color: @background-color;
+			border-radius: 25px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			font-size: 1.55rem;
+			margin: 0px 20px 20px 20px;
+			@media @phone-down {
+				.mixin-flex-column();
+				border: 1px solid darkgray;
+			}
+			a {
+				text-decoration: none;
+				color: #000;
+				padding: 5px 0px 5px 0px;
+				align-self: center;
+			}
+			a:hover {
+				color: white;
+				background-color: #555;
+				padding: 5px 10px 5px 10px;
+				border-radius: 5px;
+			}
+			a:first-child {
+				margin-left: 0;
+			}
+			a:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.intro-section {
+		background-color: @background-color;
+		border-radius: 25px;
+		.mixin-flex();
+		font-size: 1.3rem;
+		margin: 0px 20px 20px 20px;
+		@media @phone-down {
+			.mixin-flex-column();
+			border: 1px solid darkgray;
+		}
+		.img-intro {
+			img {
+				.mixin-flex-column();
+				padding: 10px 0px 10px 10px;
+				width: 600px;
+				max-width: 100%;
+				max-height: 450px;
+				border-radius: 50px;
+				@media @phone-down {
+					padding-right: 10px;
+				}
+			}
+		}
+		.text-intro {
+			.mixin-flex-column();
+			justify-content: center;
+			padding: 10px 10px 0px 10px;
+			line-height: 1.15;
+			.intro-text {
+				text-align: center;
+			}
+			button {
+				align-self: center;
+				margin: 10px 0px 0px 0px;
+				width: 150px;
+				height: 40px;
+				border-radius: 10px;
+				background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+				@media @phone-down {
+					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+
+	.about-section {
+		background-color: @background-color;
+		border-radius: 25px;
+		.mixin-flex();
+		align-items: center;
+		font-size: 1.1rem;
+		margin: 10px 20px 0px 20px;
+		@media @phone-down {
+			.mixin-flex-column();
+			border: 1px solid darkgray;
+		}
+		.left-about-section {
+			flex: 4;
+			padding: 10px 10px 0px 10px;
+			margin: 10px 10px 20px 10px;
+			line-height: 1.15;
+		}
+		.right-about-section {
+			flex: 3;
+			margin: 0px 10px 20px 10px;
+			line-height: 1.15;
+			ol{
+				list-style-type: square;
+				@media @phone-down {
+					list-style-type: none;
+				}
+				li {
+					border-top: 1px solid darkgray;
+					padding: 5px 0px 5px 0px;
+				}
+				li:last-child {
+					border-bottom: 1px solid darkgray;
+				}
+			}
+		}
+	}
+
+	.portfolio-section {
+		background-color: @background-color;
+		border-radius: 25px;
+		.mixin-flex-column();
+		line-height: 1.15;
+		font-size: 1.1rem;
+		margin: 20px 20px 20px 20px;
+		p {
+			margin: 10px 10px 0px 20px;
+		}
+		table {
+			margin: 20px 10px 10px 10px;
+			tr {
+				border: 1px solid darkgray;
+				th {
+					padding: 10px;
+					text-align: center;
+				}
+				td {
+					padding: 10px;
+					text-align: center;
+					vertical-align: middle;
+					a {
+						text-decoration: none;
+						color: darkgray;
+					}
+					a:hover {
+						color: white;
+					}
+				}
+				td:first-child:hover {
+					color: white;
+					background-color: #555;
+					border-radius: 15px;
+				}
+			}
+			tr:nth-child(even) {
+				color: white;
+				background-color: #777;
+			}
+
+			tr:first-child {
+			  background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+			}
+		}
+	}
+
+	.contact {
+		background-color: @background-color;
+		border-radius: 25px;
+		line-height: 1.15;
+		font-size: 1.1rem;
+		.mixin-flex();
+		margin: 0px 20px 20px 20px;
+		@media @phone-down {
+			.mixin-flex-column();
+			border: 1px solid darkgray;
+		}
+		p {
+			margin: 10px 10px 10px 20px;
+			flex: 5;
+		}
+		ul {
+			margin: 10px 20px 10px 10px;
+			display: flex;
+			flex-flow: row wrap;
+			flex: 3;
+			li {
+				margin: 0px 5px 0px 5px;
+				a {
+					text-decoration: none;
+					color: #000;
+					padding: 5px 0px 5px 0px;
+					align-self: center;
+				}
+				a:hover {
+					color: white;
+					background-color: #555;
+					border-radius: 5px;
+				}
+				a:first-child {
+					margin-left: 0;
+				}
+				a:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+	footer {
+		background-color: @background-color;
+		border-radius: 25px;
+		line-height: 1.15;
+		font-size: 1rem;
+		margin: 0px 20px 20px 20px;
+		text-align: center;
+	}
+
+}
